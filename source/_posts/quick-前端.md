@@ -10,6 +10,7 @@ tags:
 ---
 JavaScript | Ajax | JQuery | Nodejs | Vuejs
 <!-- more -->
+
 # JavaScript
 
 ## API
@@ -166,7 +167,7 @@ clearInterval(s2);
 
 setTimeout递归调用：
 
-![64](\images\64.jpg)
+![64](/images/64.jpg)
 
 
 
@@ -182,7 +183,7 @@ screen对象： 屏幕对象 它可以获取到与屏幕相关的数据。比如
 
 通过浏览器查看：
 
-![1](\images\2.png)
+![1](/images/2.png)
 
 其中较重要属性：
 
@@ -199,7 +200,7 @@ navigator对象： 浏览器对象 它可以获取到浏览器的相关数据。
 
 在浏览器控制台输入navigator，即可查看到所有的属性：
 
-![1](\images\1.png)
+![1](/images/1.png)
 
 两个重要的属性：
 
@@ -211,7 +212,7 @@ navigator对象： 浏览器对象 它可以获取到浏览器的相关数据。
 
 谷歌chrome浏览器测试如下:
 
-![3](\images\3.png)
+![3](/images/3.png)
 
 Mozilla:是组织名称
 
@@ -259,7 +260,7 @@ history对象： 历史对象，它主要是用来记录浏览器的访问历史
 
 访问后在控制台输入location，获取url相关信息
 
-![4](\images\4.png)
+![4](/images/4.png)
 
 
 
@@ -294,7 +295,7 @@ history对象的方法
 - **history.go(1) **相当于 **history.forward()**
 - **history.go(-1) 相当于 ** **history.back()**
 
-![5](\images\5.png)
+![5](/images/5.png)
 
 - **location.reload()**
 
@@ -1153,7 +1154,7 @@ reg.test(balance)
 
 原理图：
 
-![6](\images\6.png)
+![6](/images/6.png)
 
 
 
@@ -1264,7 +1265,7 @@ console.log( p2.getName() );
 
 当系统加载构造函数的同时，会自动在内存中生成一个对象。我们把这个对象就称之为“原型对象”。
 
-![7](\images\7.png)
+![7](/images/7.png)
 
 
 
@@ -1319,7 +1320,7 @@ function createXhr() {
 
 ② 调用createXhr函数，获取Ajax对象 "
 
-![68](\images\68.jpg)
+![68](/images/68.jpg)
 
 ## Ajax属性&方法
 
@@ -2998,7 +2999,7 @@ var vm = new Vue({
 
 显示效果：
 
-![94](\images\94.jpg)
+![94](/images/94.jpg)
 
 ###  **watch**
 
@@ -3121,15 +3122,15 @@ new Vue({
 
 效果：
 
-![95](\images\95.jpg)
+![95](/images/95.jpg)
 
 点击后：
 
-![96](\images\96.jpg)
+![96](/images/96.jpg)
 
 再点击后：
 
-![97](\images\97.jpg)
+![97](/images/97.jpg)
 
 ### **render**
 
@@ -3572,7 +3573,13 @@ webpack  --> webpack-dev-server
 
 # Vue项目开发
 
-## 准备工作
+目录结构：
+
+引入方法
+
+![148](/images/148.jpg)
+
+## 前期处理
 
 ### Vue-cli 脚手架工具
 
@@ -3582,21 +3589,193 @@ webpack  --> webpack-dev-server
 
 - 创建项目文件夹，使用vue-cli对项目进行初始化，创建项目
 
-  ![123](\images\123.jpg)
+  ![123](/images/123.jpg)
 
 - webpack配置文件
 
    添加自己喜欢的参数 优化开发体验 
 
-  ![124](\images\124.jpg)
+  ![124](/images/124.jpg)
 
   了解vue-cli在webpack配置文件中 设置的解析路径 别名
 
-  ![125](\images\125.jpg)
+  ![125](/images/125.jpg)
 
 - vue-cli自动搭建项目 没有安装sass-loader 自行安装
 
-  cnpm i sass-loader node-sass -D
+  > \> cnpm i sass-loader node-sass -D
+
+
+
+### import引入方法
+
+![22](/images/22.png)
+
+
+
+### 创建组件
+
+- 创建新页面 找src/components目录 创建新组建login
+
+  ![151](/images/151.jpg) 
+
+- 根据定义的路由规则 编写新的路由规则 
+
+- 在组件的style标签上加上scoped属性 添加lang="scss"样式种类
+
+
+
+### 使用路由
+
+- 目前项目自带vue-router，在src/main.js中引入了 路由规则文件
+
+  ![149](/images/149.jpg)
+
+- 在src/router/index.js文件中设置路由
+
+  ![150](/images/150.jpg) 
+
+- 嵌套路由
+
+  添加路由规则
+
+  ![174](/images/174.jpg) 
+
+  ![175](/images/175.jpg) 
+
+
+
+### 安装组件库
+
+见文档->https://jiuxinyan.github.io/2019/01/08/quick-tools/#more->element
+
+### 抽离axios函数库
+
+axio文档：npm->axio
+
+- 安装axios插件
+
+  > \> cnpm i axios -S
+
+- 抽离axios函数库
+
+  在src目录下 创建api目录 添加index.js文件 
+
+  需要在接口函数库中 定义请求方法 
+
+  ![137](/images/137.jpg)
+
+- 利用baseURL配置项封装基础路径 
+
+  ![161](/images/161.jpg)  
+
+### 部署项目后端
+
+- 拿到后端接口的文件 把数据库模拟数据文件db/mydb.sql导入到数据库中
+
+  ![152](/images/152.jpg)  
+
+- 打开文件config/default.json修改数据库配置项
+
+  ![153](/images/153.jpg) 
+
+- 初始化项目 
+
+  >  \> cnpm i
+
+- 启动服务
+
+  >  \> node app.js
+
+
+
+
+
+## 登录登出
+
+### 登录处理
+
+- 创建src/components/Login.vue模板 ，改写路由规则文件
+
+- 选择在elementUI中想要的组件并移植到项目模板中
+
+- 引入输入框->见element组件使用文档
+
+  https://jiuxinyan.github.io/2019/01/08/quick-tools/#more
+
+- 查看功能是否正常
+
+  ![158](/images/158.jpg)
+
+- 移植已有的样式（或自己写）
+
+- 登陆页面欢迎信息(侦听器 路由信息)
+
+  在App.vue组件中添加一个侦听器 针对路由路径信息进行侦听，若为登录界面则显示欢迎访问本站 见element组件使用文档
+
+  ![159](/images/159.jpg)
+
+- 表单验证 见element组件使用文档例子
+
+- 登录验证：
+
+  处理响应 在login.vue文件中
+
+  引入api接口处理文件
+
+  ![162](/images/162.jpg)
+
+  ![163](/images/163.jpg)
+
+- 会话技术token
+
+  查看后台文档 
+
+  ![23](/images/23.png)
+
+- 登录验证接口
+
+  ![24](/images/24.png)
+
+- 在登陆时 登陆成功 需要把返回数据中的token保存在浏览器中
+
+  在请求其他接口时 通过代码把token设置到请求头中
+
+  浏览器中可以通过 localStorage 本地化读写数据
+
+  ![164](/images/164.jpg)
+
+- 请求拦截器 用来设置token请求头 
+
+  ![165](/images/165.jpg)
+
+### 防翻墙功能
+
+login、register不需要token就可以访问
+
+其他页面比如 home 需要token才能访问
+
+- VueRouter文档 全局路由守卫
+
+  ![27](/images/27.png)
+
+  ![25](/images/25.png)
+
+![26](/images/26.png)
+
+- 在router/index.js 引入路由模块 获得Router的构造器
+
+  new Router实例化获得路由对象 导出对象
+
+  ![167](/images/167.jpg)
+
+  在mian.js中导入router/index.js 导入了路由对象，设置全局路由守卫
+
+  ![166](/images/166.jpg)
+
+### 退出处理
+
+![168](/images/168.jpg)
 
 
 

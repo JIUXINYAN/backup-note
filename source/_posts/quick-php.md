@@ -1827,25 +1827,25 @@ project  应用部署目录
 
 #### 应用设置
 
-![9](\images\9.jpg)
+![9](/images/9.jpg)
 
-![12](\images\12.jpg)
+![12](/images/12.jpg)
 
-![10](\images\10.jpg)
+![10](/images/10.jpg)
 
 
 
 #### 模块设置
 
-![13](\images\13.jpg)
+![13](/images/13.jpg)
 
 #### URL设置
 
-![11](\images\11.jpg)
+![11](/images/11.jpg)
 
 #### 自定义配置
 
-![14](\images\14.jpg)
+![14](/images/14.jpg)
 
 
 
@@ -1857,21 +1857,21 @@ project  应用部署目录
 
 在application/database.php文件中配置数据库相应参数 
 
-![6](\images\6.jpg)
+![6](/images/6.jpg)
 
-![7](\images\7.jpg)
+![7](/images/7.jpg)
 
 ### 配置路由
 
 进入public/.htaccess
 
-![8](\images\8.jpg)
+![8](/images/8.jpg)
 
 
 
 ### 创建目录
 
-![15](\images\15.jpg)
+![15](/images/15.jpg)
 
 
 
@@ -1879,7 +1879,7 @@ project  应用部署目录
 
 到application/route.php
 
-![16](\images\16.jpg)
+![16](/images/16.jpg)
 
 
 
@@ -1887,11 +1887,11 @@ project  应用部署目录
 
 把资源放到public/static/admin目录
 
-![18](\images\18.jpg)
+![18](/images/18.jpg)
 
 修改资源路径
 
-![17](\images\17.jpg)
+![17](/images/17.jpg)
 
 
 
@@ -1903,11 +1903,11 @@ project  应用部署目录
 
 - 引用User model 并创建PublicController/login方法
 
-  ![27](\images\27.jpg)
+  ![27](/images/27.jpg)
 
 - 在model/User.php中加入checkUser()方法
 
-  ![28](\images\28.jpg)
+  ![28](/images/28.jpg)
 
 
 
@@ -1919,13 +1919,13 @@ project  应用部署目录
 
 - 重定向登录页
 
-  ![19](\images\19.jpg)
+  ![19](/images/19.jpg)
 
   
 
 - 设置公共区域防翻墙 创建CommonController
 
-  ![20](\images\20.jpg)
+  ![20](/images/20.jpg)
 
   
 
@@ -1940,11 +1940,11 @@ project  应用部署目录
 
 - 创建私有方法_initAuth 把拥有的权限写入session中
 
-  ![29](\images\29.jpg)
+  ![29](/images/29.jpg)
 
 - 进入left.html模板 (控制面板) 循环输出菜单功能
 
-  ![30](\images\30.jpg)
+  ![30](/images/30.jpg)
 
 - 进入CommonController
 
@@ -1960,11 +1960,11 @@ project  应用部署目录
 
 - 实例化模型并调用getSonsXXX()方法
 
-  ![21](\images\21.jpg)
+  ![21](/images/21.jpg)
 
 - 在该**模板**中创建方法getSonsXXX() 并进行无限极分类
 
-  ![21](\images\21.jpg)
+  ![21](/images/21.jpg)
 
   
 
@@ -1974,19 +1974,19 @@ project  应用部署目录
 
 ###  处理数据子级关系
 
-![25](\images\25.jpg)
+![25](/images/25.jpg)
 
-![26](\images\26.jpg)
+![26](/images/26.jpg)
 
 
 
 ### 特殊报错
 
-![23](\images\23.jpg)
+![23](/images/23.jpg)
 
 在公共文件application/common.php中
 
-![24](\images\24.jpg)
+![24](/images/24.jpg)
 
 
 
@@ -1996,13 +1996,13 @@ project  应用部署目录
 
 ### 连表操作
 
-![32](\images\32.jpg)
+![32](/images/32.jpg)
 
 ### 入库前钩子
 
 入库前实现某一属性值的生成
 
-![39](\images\39.jpg)
+![39](/images/39.jpg)
 
 
 
@@ -2012,29 +2012,29 @@ project  应用部署目录
 
 - 在public/static/plugins/粘贴富文本编辑器文件ueditor
 
-   ![33](\images\33.jpg)
+   ![33](/images/33.jpg)
 
 - 打开富文本编辑器的源代码 在需要导入富文本编辑器的html中粘贴要导入的代码
 
-  ![34](\images\34.jpg)
+  ![34](/images/34.jpg)
 
 - 修改路径
 
-  ![35](\images\35.jpg)
+  ![35](/images/35.jpg)
 
 - 实例化编辑器
 
-   ![36](\images\36.jpg)
+   ![36](/images/36.jpg)
 
 - 修改富文本编辑器的配置(宽高)
 
   在ueditor/ueditor.config.js中进行修改
 
-  ![37](\images\37.jpg)
+  ![37](/images/37.jpg)
 
 - 加参数防止缓存
 
-   ![38](\images\38.jpg)
+   ![38](/images/38.jpg)
 
 
 
@@ -2042,7 +2042,7 @@ project  应用部署目录
 
 - 上传多图片的要求，为了满足商城前台商品详情页图片画廊的最佳显示效果
 
-![40](\images\40.jpg)
+![40](/images/40.jpg)
 
 ​	建议原图上传800*800，甚至更大，生成两种缩略图
 
@@ -2052,23 +2052,23 @@ project  应用部署目录
 
 - 字段保存建议使用text格式用json保存图片
 
-- 把多文件的信息存储在img[ ]中![41](\images\41.jpg)
+- 把多文件的信息存储在img[ ]中![41](/images/41.jpg)
 
 - 在控制器中 在验证成功后 做文件上传 获取img[ ] 
 
-  ![43](\images\43.jpg)
+  ![43](/images/43.jpg)
 
 - 创建文件上传方法
 
-   ![42](\images\42.jpg)
+   ![42](/images/42.jpg)
 
 - 原图上传成功后 进行缩略图上传处理（中小图）
 
-   ![44](\images\44.jpg)
+   ![44](/images/44.jpg)
 
 - 回到添加方法
 
-![45](\images\45.jpg)
+![45](/images/45.jpg)
 
 
 
@@ -2078,55 +2078,55 @@ project  应用部署目录
 
 - 进入平台测试号码，添加用来测试的号码 
 
-  ![46](\images\46.jpg)
+  ![46](/images/46.jpg)
 
 - 点击进入开发文档 —> 短信开发手册 —> demo示例
 
 - 下载SMS PHP DEMO并解压
 
-  ![47](\images\47.jpg)
+  ![47](/images/47.jpg)
 
 - 复制CCPRestSmsSDK.php 到商城项目extend文件夹里的新建文件夹sendSms中
 
-  ![48](\images\48.jpg)
+  ![48](/images/48.jpg)
 
 - 先暂时把SendTemplateSMS.php文件复制粘贴到入口文件的目录中，方便调试
 
-  ![49](\images\49.jpg)
+  ![49](/images/49.jpg)
 
 - 修改里面的内容
 
-  ![50](\images\50.jpg)
+  ![50](/images/50.jpg)
 
 - 修改该文件底部为方法的调用
 
-  ![51](\images\51.jpg)
+  ![51](/images/51.jpg)
 
 - 复制sendTemplateSMS.php的内容 按一定方式移动到application/common.php公共文件内并进行修改，
 
-  ![52](\images\52.jpg)
+  ![52](/images/52.jpg)
 
-  ![53](\images\53.jpg)
+  ![53](/images/53.jpg)
 
 -  删除SendTemplateSMS.php，进入登录/注册界面
 
   调用方法并测试
 
-  ![54](\images\54.jpg)
+  ![54](/images/54.jpg)
 
-  ![55](\images\55.jpg)
+  ![55](/images/55.jpg)
 
 - 添加ajax验证
 
-  ![56](\images\56.jpg)
+  ![56](/images/56.jpg)
 
-  ![57](\images\57.jpg)
+  ![57](/images/57.jpg)
 
 - 防止频繁发送（设置倒计时60s）
 
-  ![58](\images\58.jpg)
+  ![58](/images/58.jpg)
 
-  ![59](\images\59.jpg)
+  ![59](/images/59.jpg)
 
 
 
@@ -2134,27 +2134,27 @@ project  应用部署目录
 
 - 登录163账号，找到【设置】->【pop3/SMTP/IMAP选项】
 
-  ![69](\images\69.jpg)
+  ![69](/images/69.jpg)
 
 - 开通smtp服务
 
-  ![70](\images\70.jpg)
+  ![70](/images/70.jpg)
 
 - 设置客户端授权密码 
 
-  ![71](\images\71.jpg)
+  ![71](/images/71.jpg)
 
 - 把插件中phpemail的文件改名为sendEmail并放入extend目录中
 
-  ![72](\images\72.jpg) 
+  ![72](/images/72.jpg) 
 
 - 修改demo.php的内容
 
-  ![73](\images\73.jpg) 
+  ![73](/images/73.jpg) 
 
 - 封装发送邮件方法，进入application/common.php创建方法sendEmail，复制demo内容到方法中，并修改
 
-  ![74](\images\74.jpg) 
+  ![74](/images/74.jpg) 
 
   调用形式：
 
@@ -2164,17 +2164,17 @@ project  应用部署目录
 
 - 找到登录界面，加上跳转链接
 
-  ![75](\images\75.jpg) 
+  ![75](/images/75.jpg) 
 
 - 添加forgetPassword方法，添加路由，渲染模板
 
-  ![76](\images\76.jpg) 
+  ![76](/images/76.jpg) 
 
 - 给发送邮件按钮(id="sendemail")绑定ajax 并创建home/public/sendEmail方法 
 
-  ![77](\images\77.jpg) 
+  ![77](/images/77.jpg) 
 
-  ![78](\images\78.jpg)
+  ![78](/images/78.jpg)
 
   href改为：
 
@@ -2186,17 +2186,17 @@ project  应用部署目录
 
   带参数路由绑定
 
-  ![79](\images\79.jpg) 
+  ![79](/images/79.jpg) 
 
 - 编写change方法，进入application/congif添加邮箱加密盐，新增参数
 
-   ![80](\images\80.jpg) 
+   ![80](/images/80.jpg) 
 
-  ![82](\images\82.jpg) 
+  ![82](/images/82.jpg) 
 
-  ![79](\images\79.jpg)
+  ![79](/images/79.jpg)
 
-  ![81](\images\81.jpg) 
+  ![81](/images/81.jpg) 
 
 
 
@@ -2221,7 +2221,7 @@ com:物流公司，如下常见的几个：
 
 返回的是一个连接地址，该地址里面是已经渲染好的渲染的物流信息
 
-![21](\images\21.png)
+![21](/images/21.png)
 
 可以使用layer 的 iframe引入
 
@@ -2245,17 +2245,17 @@ Composer 是 PHP 的一个包依赖管理工具。能够帮助我们安装我们
 
 去composer官网(  <https://getcomposer.org/download/>   )下载Composer-setup.exe进行安装，由于此软件安装需要联网且服务器在国外安装很难成功，所以这里推荐使用下面第二种方式进行安装。
 
-![10](\images\10.png)
+![10](/images/10.png)
 
 - [推荐]第二种方式
 
   去官网https://getcomposer.org/download 下载composer.phar文件。
 
-![11](\images\11.png)
+![11](/images/11.png)
 
 找到并进入 PHP 的安装目录,将下载的composer.phar 复制到 PHP 的安装目录下面，也就是和 php.exe 在同一级目录。注意自己使用哪个php版本。 
 
-![84](\images\84.jpg)
+![84](/images/84.jpg)
 
 在 PHP 安装目录（D:\phpStudy\php\php-5.6.27-nts）下新建一个 composer.bat 文件，并将下列代码保存到此文件中。
 
@@ -2267,7 +2267,7 @@ Composer 是 PHP 的一个包依赖管理工具。能够帮助我们安装我们
 
 进入对应php版本目录D:\phpStudy\php\php-5.6.27-nts中输入composer指令，出现如下提示代表安装成功：
 
-![85](\images\85.jpg)
+![85](/images/85.jpg)
 
 为了可以全局（任意位置）访问composer，可以把php.exe的所在目录（D:\phpStudy\php\php-5.6.27-nts）定义在环境变量path选项中。
 
@@ -2283,7 +2283,7 @@ Composer 是 PHP 的一个包依赖管理工具。能够帮助我们安装我们
 
 全局配置：composer config -g repo.packagist composer https://packagist.phpcomposer.com
 
-![12](\images\12.png)
+![12](/images/12.png)
 
 局部配置：若只想在当前项目中有效，把上面的命令去掉 -g 即可。
 
@@ -2397,7 +2397,7 @@ composer selfupdate
 
 **步骤1**：切换到项目根目录即composer.json 所在的目录，输入指令 composer require topthink/think-captcha=1.0.*进行安装。
 
-![13](\images\13.png)
+![13](/images/13.png)
 
 注：不要安装2.0以上版本，此版本需要tp5是5.1版本，我们tp5版本是5.0版本
 
@@ -2405,7 +2405,7 @@ composer selfupdate
 
 默认下载的tp5框架已经帮我们下载好了验证码，不用composer安装可直接使用即可。
 
-![14](\images\14.png)
+![14](/images/14.png)
 
 #### 完成登录的验证码功能
 
@@ -2431,19 +2431,19 @@ http://layer.layui.com/ ：弹出框等。
 
 - 点击选项
 
-![60](\images\60.jpg)
+![60](/images/60.jpg)
 
 - 复制代码 覆盖到之前显示的地方 如：alert
 
-  ![61](\images\61.jpg)
+  ![61](/images/61.jpg)
 
 - 找到layer-v3.0.1文件 把里面的layer文件拖到public/static/plugins
 
-  ![62](\images\62.jpg)
+  ![62](/images/62.jpg)
 
 - 在当前html模板引入layer/layer.js
 
-  ![63](\images\63.jpg)
+  ![63](/images/63.jpg)
 
   
 
@@ -2459,7 +2459,7 @@ https://www.juhe.cn：提供各种API接口
 
 ② 看请求的url地址
 
-![65](\images\65.jpg)
+![65](/images/65.jpg)
 
 
 
@@ -2492,7 +2492,7 @@ index.html：
 
 deal.php：
 
-![66](\images\66.jpg)
+![66](/images/66.jpg)
 
 
 
@@ -2506,7 +2506,7 @@ deal.php：
 
 搜索想要的图标 打开
 
-![67](\images\67.jpg)
+![67](/images/67.jpg)
 
 
 
@@ -2520,7 +2520,7 @@ deal.php：
 
 - 进入沙箱环境
 
-  ![15](\images\15.png)
+  ![15](/images/15.png)
 
 - 下载支付宝支付的开发包SDK&Demo 
 
@@ -2528,11 +2528,11 @@ deal.php：
 
   下载回来的压缩包如下：
 
-  ![16](\images\16.png)
+  ![16](/images/16.png)
 
   解压下来如下所示： 
 
-  ![17](\images\17.png)
+  ![17](/images/17.png)
 
   - aop：包含**支付宝核心的支付文**件。
 
@@ -2550,11 +2550,11 @@ deal.php：
 
 - 引入支付宝到项目中 ,把支付宝下载下来的SDK文件复制到目录/extend下面 ，改名为alipay 
 
-  ![86](\images\86.jpg)
+  ![86](/images/86.jpg)
 
 - 进行支付前的相关参数配置，进入alipay/config.php
 
-  ![87](\images\87.jpg)
+  ![87](/images/87.jpg)
 
   - app_id:可以从支付宝的沙箱应用中获取到
   - 支付宝网关(gatewayUrl)
@@ -2569,13 +2569,13 @@ deal.php：
 
     进入https://docs.open.alipay.com/291/105971
 
-    ![88](\images\88.jpg)
+    ![88](/images/88.jpg)
 
     解压后，以管理员身份运行”RSA签名验证工具.bat“(或打开黑窗口进入 D:\PHP\插件\支付宝\secret_key_tools_RSA_win\RSA签名验签工具windows_V1.4 输入命令：
 
     `jre\bin\java.exe -Dfile.encoding=UTF-8 -jar openssl_tools.jar`)，弹出窗口
 
-    ![18](\images\18.png)
+    ![18](/images/18.png)
 
     选择选项，生成私钥，把商户应用私钥复制粘贴到配置项merchant_private_key中
 
@@ -2583,29 +2583,29 @@ deal.php：
 
     复制上图的应用公钥，进入沙箱环境，点击查看应用公钥
 
-    ![19](\images\19.png)
+    ![19](/images/19.png)
 
     经过上传生成的公钥复制粘贴到配置项alipay_public_key中
 
   - 异步通知地址（notify_url）和同步跳转（return_url）
 
-    ![89](\images\89.jpg)
+    ![89](/images/89.jpg)
 
 - 进入控制器，创建方法
 
-  ![90](\images\90.jpg) 
+  ![90](/images/90.jpg) 
 
   在支付处调用该方法
 
-  ![91](\images\91.jpg) 
+  ![91](/images/91.jpg) 
 
   异步通知地址
 
-  ![92](\images\92.jpg) 
+  ![92](/images/92.jpg) 
 
 - 修改pagepay/pagepay.php支付文件的几个变量
 
-  ![20](\images\20.png) 
+  ![20](/images/20.png) 
 
 
 
