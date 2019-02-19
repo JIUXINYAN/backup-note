@@ -645,6 +645,8 @@ wepy snippet插件：
 
 看到左侧部分显示了“Hello World”说明我们小程序就构建成功。
 
+
+
 ### 文件结构&配置
 
 #### 文件结构
@@ -675,7 +677,7 @@ wepy snippet插件：
 
    ![135](/images/135.jpg)
 
-#### 配置app.json
+#### app.json(公共设置)
 
 app.json 文件用来对微信小程序进行全局配置，决定页面文件的路径、窗口表现、设置网络超时时间、设置多 tab(底部导航菜单) 等。
 
@@ -693,7 +695,49 @@ app.json 文件用来对微信小程序进行全局配置，决定页面文件�
 | **networkTimeout** | Object       | 否   | 设置网络超时时间       |
 | **debug**          | Boolean      | 否   | 设置是否开启debug模式  |
 
+属性的配置可查看微信小程序文档
 
+### 事件
+
+#### 事件分类
+
+| 类型               | 触发条件                                                     |
+| ------------------ | ------------------------------------------------------------ |
+| **touchstart**     | 手指触摸动作开始                                             |
+| **touchmove**      | 手指触摸后移动                                               |
+| touchcancel        | 手指触摸动作被打断，如来电提醒，弹窗                         |
+| touchend           | 手指触摸动作结束                                             |
+| **tap**            | 手指触摸后马上离开                                           |
+| **longpress**      | 手指触摸后，超过350ms再离开，如果指定了事件回调函数并触发了这个事件，tap事件将不被触发 |
+| transitionend      | 会在 WXSS transition 或 wx.createAnimation 动画结束后触发    |
+| animationstart     | 会在一个 WXSS animation 动画开始时触发                       |
+| animationiteration | 会在一个 WXSS animation 一次迭代结束时触发                   |
+| animationend       | 会在一个 WXSS animation 动画完成时触发                       |
+| touchforcechange   | 在支持 3D Touch 的 iPhone 设备，重按时会触发                 |
+
+事件绑定：
+
+```html
+<!-- bind:事件名="函数" -->
+<!-- 例如 -->
+<view bind:tap="p_tap">
+	<view bind:tap="s_tap">你过来呀</view>
+</view>
+
+<!-- 阻止冒泡 -->
+<view bind:tap="p_tap">
+	<view catch:tap="s_tap">你过来呀</view>
+</view>
+```
+
+#### 事件对象
+
+| 属性          | 类型    | 说明                           |
+| ------------- | ------- | ------------------------------ |
+| type          | String  | 事件类型                       |
+| timeStamp     | Integer | 事件生成时的时间戳             |
+| target        | Object  | 触发事件的组件的一些属性值集合 |
+| currentTarget | Object  | 当前组件的一些属性值集合       |
 
 
 
